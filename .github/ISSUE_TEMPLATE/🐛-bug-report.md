@@ -30,7 +30,7 @@ Steps to reproduce the behavior:
 3. See error / unexpected output
 
 > ⚠️ **Do not include real secrets.**
-> Use dummy values only (e.g. `ghp_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`).
+> Use dummy values only (e.g. `ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`).
 
 ---
 
