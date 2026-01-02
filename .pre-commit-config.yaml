@@ -1,0 +1,8 @@
+repos:
+- repo: local
+  hooks:
+    - id: secretscout
+      name: SecretScout (defensive secret scan)
+      entry: secretscout scan --staged --format minimal --fail-on high
+      language: system
+      pass_filenames: false

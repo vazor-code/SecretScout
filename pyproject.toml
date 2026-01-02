@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "secretscout"
+version = "0.2.0"
+description = "Defensive secret scanner for git repos and folders (pretty report + JSON/SARIF/HTML + pre-commit helper)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "vazor-code"}]
+keywords = ["security", "secrets", "pre-commit", "devtools", "cli", "sarif"]
+dependencies = [
+  "typer>=0.12.3",
+  "rich>=13.7.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+  "ruff>=0.6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/vazor-code/secretscout"
+Repository = "https://github.com/vazor-code/secretscout"
+Issues = "https://github.com/vazor-code/secretscout/issues"
+
+[project.scripts]
+secretscout = "secretscout.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/secretscout"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
