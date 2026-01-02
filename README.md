@@ -1,7 +1,9 @@
-# 🕵️‍♂️🔐 SecretScout
-
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=00FF00&center=true&vCenter=true&width=800&height=80&lines=Stop+secrets+before+they+commit;Scan.+Block.+Commit;Because+oops+is+not+a+security+strategy" alt="SecretScout Slogan">
+  <img
+    src="https://repository-images.githubusercontent.com/1126626727/8fcbe2b2-5573-482d-b669-3c48eaad8c50"
+    alt="SecretScout Slogan"
+    width="800"
+  >
 </p>
 
 <p align="center">
